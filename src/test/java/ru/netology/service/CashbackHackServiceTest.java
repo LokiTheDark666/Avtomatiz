@@ -22,4 +22,11 @@ public class CashbackHackServiceTest {
         int results = service.remain(1900);
         assertEquals(expected,results);
     }
+    @Test
+    public void testRemain1k(){
+        CashbackHackService service = new CashbackHackService();
+        int expected = 0;
+        int results = service.remain(1000);
+        assertEquals(results,expected);
+    }
 }
