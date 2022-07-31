@@ -25,8 +25,8 @@ public class CashbackHackServiceTest {
     @Test
     public void testRemain1k(){
         CashbackHackService service = new CashbackHackService();
-        int expected = 0;
-        int results = service.remain(1000);
+        int expected = 1000;
+        int results = service.remain(0);
         assertEquals(results,expected);
     }
 }
